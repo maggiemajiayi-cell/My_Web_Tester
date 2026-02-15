@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人世界 | GitHub, YouTube & Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .card { background: #1e293b; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); border-color: #38bdf8; }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-2xl font-bold text-sky-400">MySpace.</h1>
+        <div class="space-x-6">
+            <a href="#projects" class="hover:text-sky-400">项目</a>
+            <a href="#youtube" class="hover:text-sky-400">视频</a>
+            <a href="#games" class="hover:text-sky-400">游戏</a>
+        </div>
+    </nav>
+
+    <header class="py-20 text-center">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-sky-500">
+        <h2 class="text-5xl font-extrabold mb-4">你好，我是 [你的名字]</h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto">一名热爱代码、视频创作和硬核游戏的开发者。</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 space-y-24 pb-20">
+
+        <section id="projects">
+            <h3 class="text-3xl font-bold mb-8 border-l-4 border-sky-500 pl-4">GitHub 项目</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card p-6 rounded-xl border border-slate-700">
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fab fa-github text-3xl"></i>
+                        <span class="text-xs font-mono text-sky-400">TypeScript</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Awesome-Project</h4>
+                    <p class="text-gray-400 mb-4">这是一个描述你的开源项目的短句，展示它的核心功能。</p>
+                    <a href="#" class="text-sky-400 hover:underline">查看源码 →</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="youtube" class="bg-slate-800/50 p-8 rounded-3xl">
+            <h3 class="text-3xl font-bold mb-8 border-l-4 border-red-500 pl-4">最新视频</h3>
+            <div class="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="games">
+            <h3 class="text-3xl font-bold mb-8 border-l-4 border-green-500 pl-4">正在游玩</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://via.placeholder.com/300x400?text=Elden+Ring" class="object-cover w-full h-64 group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+                        <span class="font-bold text-white">艾尔登法环</span>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-10 border-t border-slate-800 text-gray-500">
+        <p>© 2024 [你的名字] - 使用 HTML & Tailwind 搭建</p>
+    </footer>
+
+</body>
+</html>
